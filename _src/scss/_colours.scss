@@ -1,0 +1,13 @@
+$brand-red: #cc0000;
+$body-background: #aaaaaa;
+
+body {
+  color: #fff;
+}
+
+.content {
+  background-color: rgba(255,255,255,0.5);
+  color: #000;
+  // border: 1px solid rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.6);
+}
