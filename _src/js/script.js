@@ -29,7 +29,7 @@ march_doors_js.resize_slide_img = (function(){
       $image.addClass('match-height');
       image_width = $image.outerWidth(true);
       left_pos = (container_width - image_width) / 2;
-      $image.css('left', left_pos + 'px');
+      // $image.css('left', left_pos + 'px');
       top_pos = 0;
       $image.css('top', top_pos + 'px');
     }
@@ -37,7 +37,7 @@ march_doors_js.resize_slide_img = (function(){
       $image.removeClass('match-height');
       image_height = $image.outerHeight(true);
       left_pos = 0;
-      $image.css('left', left_pos + 'px');
+      // $image.css('left', left_pos + 'px');
       top_pos = (container_height - image_height) / 2;
       $image.css('top', top_pos + 'px');
     }
