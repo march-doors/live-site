@@ -1,20 +1,42 @@
 .bg-slides {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  .slide {
+    
+    position: relative;
+    width: 100%;
+  
+  @include breakpoint(baby-bear) {
     position: absolute;
     height: 100%;
+  }
+  
+  
+  .slide {
+    position: absolute;
     width: 100%;
-    img {
+      position: relative;
+    @include breakpoint(baby-bear) {
       position: absolute;
+      height: 100%;
+    }
+    // .img-container {
+    //   position: relative;
+    //   padding-bottom: 75%;
+    // }
+    img {
       top: 0;
       left: 0;
       width: 100%;
       min-width: 0;
+        position: relative;
+      
+      @include breakpoint(baby-bear) {
+        position: absolute;
+      }
+      
       &.match-height {
-        width: auto;
-        height: 100%;
+        @include breakpoint(baby-bear) {
+          width: auto;
+          height: 100%;
+        }
       }
     }
   }

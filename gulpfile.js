@@ -10,7 +10,8 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
-var sass = require('gulp-sass');
+// var sass = require('gulp-sass');
+var compass = require('gulp-compass');
 var fileinclude = require('gulp-file-include');
 var markdown = require('gulp-markdown');
  
@@ -24,7 +25,7 @@ gulp.task('jshint', function() {
 // minify new images
 gulp.task('imagemin', function() {
   var imgSrc = './_src/img/**/*',
-      imgDst = './build/img';
+      imgDst = './img';
  
   gulp.src(imgSrc)
     .pipe(changed(imgDst))
@@ -65,19 +66,33 @@ gulp.task('scripts', function() {
 
 // CSS concat, auto-prefix and minify
 gulp.task('styles', function() {
-  gulp.src(['./_src/scss/*.scss'])
-    .pipe(sass({ includePaths : ['./_src/scss/'] }))
-    .pipe(concat('style.css'))
-    .pipe(autoprefix('last 2 versions'))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest('./css/'));
+  // gulp.src(['./_src/scss/*.scss'])
+  //   .pipe(concat('temp-style.scss'))
+  //   .pipe(sass({ includePaths : ['./_src/scss/'] }))
+  //   .pipe(concat('style.css'))
+  //   .pipe(autoprefix('last 2 versions'))
+  //   .pipe(minifyCSS())
+  //   .pipe(gulp.dest('./css/'));
+
+
+  return gulp.src('_src/scss/style.scss')
+    .pipe(compass({
+      sass: '_src/scss',
+      css: 'css'
+    }))
+    .pipe(autoprefix('last 2 version'))
+    .pipe(gulp.dest('css'))
+    // .pipe(rename({ suffix: '.min' }))
+    // .pipe(minifyCSS())
+    // .pipe(livereload(server))
+    .pipe(gulp.dest('css'));
+    // .pipe(notify({ message: 'Styles task complete' }));
 });
 
 
 // default gulp task
 gulp.task('default', ['imagemin', 'scripts', 'styles'], function() {
 
- 
   // watch for JS changes
   gulp.watch('./_src/js/*.js', function() {
     gulp.run('jshint', 'scripts');

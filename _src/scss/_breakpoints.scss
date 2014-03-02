@@ -1,0 +1,12 @@
+// Breakpoints.
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (min-width: 1920px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (min-width: 1600px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (min-width: 650px)  { @content; }
+  }
+}

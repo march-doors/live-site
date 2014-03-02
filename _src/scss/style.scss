@@ -4,6 +4,9 @@
 // Normalize stylesheet.
 @import '_normalize';
 
+// Manage breakpoints.
+@import '_breakpoints';
+
 // Only contains variables, no output css.
 @import '_colours';
 

@@ -1,17 +1,5 @@
 /* Structure */
 
-// Breakpoints.
-@mixin breakpoint($point) {
-  @if $point == papa-bear {
-    @media (min-width: 1920px) { @content; }
-  }
-  @else if $point == mama-bear {
-    @media (min-width: 1600px) { @content; }
-  }
-  @else if $point == baby-bear {
-    @media (min-width: 800px)  { @content; }
-  }
-}
 
 html {
   height: 100%;
@@ -19,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #333;
+  background-color: #fff;
   padding: 0;
   margin: 0;
   height: 100%;
@@ -28,21 +16,29 @@ body {
 
 .fixed-page-wrap {
   display: block;
-  position: fixed;
-  height: 100%;
   width: 100%;
-  background-color: orange;
   right: 0;
   top: 0;
+    
+    position: relative;
+  @include breakpoint(baby-bear) {
+    position: fixed;
+    height: 100%;
+  }
+
   .page {
     z-index: 5;
     display: block;
-    position: absolute;
     height: 100%;
     width: 100%;
-    overflow-y: auto;
-    padding: 2em;
-    padding-bottom: 8em;
+    
+      position: relative;
+    @include breakpoint(baby-bear) {
+      position: absolute;
+      overflow-y: auto;
+      padding: 2em;
+      padding-bottom: 6em;
+    }
 
     .content {
       width: 100%;
@@ -59,13 +55,16 @@ body {
 
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: auto;
-  z-index: 10;
-  background-color: rgba(0,0,0,0.7);
-  margin-bottom: 50px;
+  z-index: 10;  
   padding: 1em;
+    
+    position: relative;
+  @include breakpoint(baby-bear) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 2em;
+  }
 }
