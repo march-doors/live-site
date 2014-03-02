@@ -1,5 +1,7 @@
 $brand-red: #cc0000;
 $body-background: #aaaaaa;
+$white-border-rgba: rgba(255,255,255,0.97);
+$black-border-rgba: rgba(15,15,15,0.85);
 
 body {
   color: #fff;
@@ -21,9 +23,12 @@ body {
 }
 
 footer {
-  background-color: rgba(0,0,0,0.85);
-  border-width: 2px 0px 0px 0;
-  border-color: rgba(255,255,255,0.9);
+  background-color: rgba(15,15,15,0.85);
+  border-width: 0px 0px 0px 0;
+  border-color: $white-border-rgba;
   border-style: solid;
+  @include breakpoint(baby-bear) {
+    border-width: 2px 0px 0px 0;
+  }
   // box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.6);
 }
