@@ -18,7 +18,7 @@ body {
   
   @include breakpoint(baby-bear) {
     box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5);
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.65);
   }
 }
 
