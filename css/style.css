@@ -761,19 +761,19 @@ h1 {
 /* line 13, ../_src/scss/_typography.scss */
 h2 {
   font-size: 29.12461px;
-  font-weight: 250;
+  font-weight: 200;
   letter-spacing: 1px;
   margin: 18px 0; }
 
 /* line 20, ../_src/scss/_typography.scss */
 h3 {
-  font-weight: 250;
+  font-weight: 200;
   font-size: 18px;
   margin: 0; }
 
 /* line 26, ../_src/scss/_typography.scss */
 p, li, address {
-  font-weight: 150;
+  font-weight: 200;
   letter-spacing: 1px; }
 
 /* line 31, ../_src/scss/_typography.scss */
