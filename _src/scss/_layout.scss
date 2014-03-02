@@ -59,6 +59,9 @@ body {
       @include breakpoint(baby-bear) {
         width: 50%;
       }
+      @include breakpoint(mama-bear) {
+        width: 33.33%;
+      }
       float: right;
       position: relative;
       z-index: 5;
