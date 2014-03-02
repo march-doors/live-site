@@ -443,7 +443,7 @@ body {
 .content {
   background-color: white;
   color: #000; }
-  @media (min-width: 650px) {
+  @media (min-width: 640px) {
     /* line 14, ../_src/scss/_colours.scss */
     .content {
       box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
@@ -455,7 +455,7 @@ footer {
   border-width: 0px 0px 0px 0;
   border-color: rgba(255, 255, 255, 0.97);
   border-style: solid; }
-  @media (min-width: 650px) {
+  @media (min-width: 640px) {
     /* line 25, ../_src/scss/_colours.scss */
     footer {
       border-width: 2px 0px 0px 0; } }
@@ -636,7 +636,7 @@ body {
   right: 0;
   top: 0;
   position: relative; }
-  @media (min-width: 650px) {
+  @media (min-width: 640px) {
     /* line 17, ../_src/scss/_layout.scss */
     .fixed-page-wrap {
       position: fixed;
@@ -650,7 +650,7 @@ body {
     max-width: 100%;
     background-color: rgba(255, 255, 255, 0.65);
     padding: 18px; }
-    @media (min-width: 650px) {
+    @media (min-width: 640px) {
       /* line 30, ../_src/scss/_layout.scss */
       .fixed-page-wrap .logo {
         padding: 36px;
@@ -671,7 +671,7 @@ body {
     height: 100%;
     width: 100%;
     position: relative; }
-    @media (min-width: 650px) {
+    @media (min-width: 640px) {
       /* line 53, ../_src/scss/_layout.scss */
       .fixed-page-wrap .page {
         position: absolute;
@@ -685,7 +685,7 @@ body {
       position: relative;
       z-index: 5;
       padding: 0 18px; }
-      @media (min-width: 650px) {
+      @media (min-width: 640px) {
         /* line 67, ../_src/scss/_layout.scss */
         .fixed-page-wrap .page .content {
           width: 50%; } }
@@ -701,7 +701,7 @@ footer {
   z-index: 10;
   padding: 1em 18px;
   position: relative; }
-  @media (min-width: 650px) {
+  @media (min-width: 640px) {
     /* line 84, ../_src/scss/_layout.scss */
     footer {
       padding: 1em 36px;
@@ -715,7 +715,7 @@ footer {
   width: 100%;
   border-bottom: 2px solid rgba(15, 15, 15, 0.85);
   overflow: hidden; }
-  @media (min-width: 650px) {
+  @media (min-width: 640px) {
     /* line 1, ../_src/scss/_background-images.scss */
     .bg-slides {
       position: absolute;
@@ -730,7 +730,7 @@ footer {
     transition: opacity ease 500ms;
     position: relative;
     padding-bottom: 62.5%; }
-    @media (min-width: 650px) {
+    @media (min-width: 640px) {
       /* line 14, ../_src/scss/_background-images.scss */
       .bg-slides .slide {
         position: absolute;
@@ -743,7 +743,7 @@ footer {
       width: 100%;
       min-width: 0;
       position: absolute; }
-      @media (min-width: 650px) {
+      @media (min-width: 640px) {
         /* line 34, ../_src/scss/_background-images.scss */
         .bg-slides .slide img.match-height {
           width: auto;
