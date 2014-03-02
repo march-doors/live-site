@@ -10,27 +10,24 @@
   
   
   .slide {
-    position: absolute;
     width: 100%;
+    opacity: 0;
+    transition: opacity ease 500ms;
+
       position: relative;
+      padding-bottom: 62.5%;
     @include breakpoint(baby-bear) {
       position: absolute;
+      padding-bottom: 0;
       height: 100%;
     }
-    // .img-container {
-    //   position: relative;
-    //   padding-bottom: 75%;
-    // }
+
     img {
       top: 0;
       left: 0;
       width: 100%;
       min-width: 0;
-        position: relative;
-      
-      @include breakpoint(baby-bear) {
-        position: absolute;
-      }
+      position: absolute;
       
       &.match-height {
         @include breakpoint(baby-bear) {
