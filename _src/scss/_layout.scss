@@ -29,17 +29,20 @@ body {
 
   .logo {
     display: block;
-    position: absolute;
+    position: relative;
     z-index: 10;
     width: 100%;
     max-width: 100%;
+    background-color: $body-background;
       padding: ms(0);
 
     @include breakpoint(baby-bear) {
       padding: 2*ms(0);
+      background-color: rgba(255,255,255,0);
     }
     @media screen and (min-width: 540px){
       width: 320px;
+      position: absolute;
     }
     img {
       max-width: 100%;
