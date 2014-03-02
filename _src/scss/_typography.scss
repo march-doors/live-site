@@ -12,14 +12,20 @@ h1 {
 
 h2 {
   font-size: ms(1);
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 1px;
   margin: ms(0) 0;
 }
 
-p {
+h3 {
   font-weight: 200;
-  // letter-spacing: 1px;
+  font-size: ms(0);
+  margin: 0;
+}
+
+p, li, address {
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 a {
@@ -28,6 +34,7 @@ a {
 }
 
 ul {
+  margin-top: 0;
   padding-left: 0;
   list-style: none;
   list-style-position: outside;

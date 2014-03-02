@@ -641,11 +641,11 @@ body {
     position: absolute;
     z-index: 10;
     width: 320px;
-    padding: 17px; }
+    padding: 18px; }
     @media (min-width: 650px) {
       /* line 29, ../_src/scss/_layout.scss */
       .fixed-page-wrap .logo {
-        padding: 34px; } }
+        padding: 36px; } }
     /* line 37, ../_src/scss/_layout.scss */
     .fixed-page-wrap .logo img {
       max-width: 100%;
@@ -662,7 +662,7 @@ body {
       .fixed-page-wrap .page {
         position: absolute;
         overflow-y: auto;
-        padding: 34px;
+        padding: 36px;
         padding-bottom: 5em; } }
     /* line 57, ../_src/scss/_layout.scss */
     .fixed-page-wrap .page .content {
@@ -670,7 +670,7 @@ body {
       float: right;
       position: relative;
       z-index: 5;
-      padding: 0 17px; }
+      padding: 0 18px; }
       @media (min-width: 650px) {
         /* line 57, ../_src/scss/_layout.scss */
         .fixed-page-wrap .page .content {
@@ -685,12 +685,12 @@ footer {
   width: 100%;
   height: auto;
   z-index: 10;
-  padding: 1em 17px;
+  padding: 1em 18px;
   position: relative; }
   @media (min-width: 650px) {
     /* line 74, ../_src/scss/_layout.scss */
     footer {
-      padding: 1em 34px;
+      padding: 1em 36px;
       position: absolute;
       bottom: 0;
       left: 0; } }
@@ -739,32 +739,40 @@ footer {
 /* line 2, ../_src/scss/_typography.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 17px; }
+  font-size: 18px; }
 
 /* line 7, ../_src/scss/_typography.scss */
 h1 {
-  font-size: 27.50658px;
+  font-size: 29.12461px;
   display: block;
   margin: 0 0; }
 
 /* line 13, ../_src/scss/_typography.scss */
 h2 {
-  font-size: 27.50658px;
-  font-weight: 100;
+  font-size: 29.12461px;
+  font-weight: 200;
   letter-spacing: 1px;
-  margin: 17px 0; }
+  margin: 18px 0; }
 
 /* line 20, ../_src/scss/_typography.scss */
-p {
-  font-weight: 200; }
+h3 {
+  font-weight: 200;
+  font-size: 18px;
+  margin: 0; }
 
-/* line 25, ../_src/scss/_typography.scss */
+/* line 26, ../_src/scss/_typography.scss */
+p, li, address {
+  font-weight: 100;
+  letter-spacing: 1px; }
+
+/* line 31, ../_src/scss/_typography.scss */
 a {
   color: inherit;
   text-decoration: underline; }
 
-/* line 30, ../_src/scss/_typography.scss */
+/* line 36, ../_src/scss/_typography.scss */
 ul {
+  margin-top: 0;
   padding-left: 0;
   list-style: none;
   list-style-position: outside; }
