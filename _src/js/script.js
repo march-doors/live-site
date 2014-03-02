@@ -44,7 +44,7 @@ march_doors_js.resize_slide_img = (function(){
   }
   function bind_events(){
     $('.bg-slides .slide img').load(function() {
-      // ounce_js.resize_homepage_img.init();
+      
     });
     
     $(window).resize(function() {

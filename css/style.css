@@ -446,13 +446,13 @@ body {
   @media (min-width: 650px) {
     /* line 12, ../_src/scss/_colours.scss */
     .content {
-      box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
       background-color: rgba(255, 255, 255, 0.5); } }
 
 /* line 23, ../_src/scss/_colours.scss */
 footer {
-  background-color: rgba(0, 0, 0, 0.9);
-  border-width: 1px 0px 1px 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-width: 2px 0px 0px 0;
   border-color: rgba(255, 255, 255, 0.9);
   border-style: solid; }
 
@@ -637,6 +637,20 @@ body {
       position: fixed;
       height: 100%; } }
   /* line 29, ../_src/scss/_layout.scss */
+  .fixed-page-wrap .logo {
+    position: absolute;
+    z-index: 10;
+    width: 320px;
+    padding: 17px; }
+    @media (min-width: 650px) {
+      /* line 29, ../_src/scss/_layout.scss */
+      .fixed-page-wrap .logo {
+        padding: 34px; } }
+    /* line 37, ../_src/scss/_layout.scss */
+    .fixed-page-wrap .logo img {
+      max-width: 100%;
+      height: auto; }
+  /* line 43, ../_src/scss/_layout.scss */
   .fixed-page-wrap .page {
     z-index: 5;
     display: block;
@@ -644,49 +658,53 @@ body {
     width: 100%;
     position: relative; }
     @media (min-width: 650px) {
-      /* line 29, ../_src/scss/_layout.scss */
+      /* line 43, ../_src/scss/_layout.scss */
       .fixed-page-wrap .page {
         position: absolute;
         overflow-y: auto;
-        padding: 2em;
-        padding-bottom: 6em; } }
-    /* line 43, ../_src/scss/_layout.scss */
+        padding: 34px;
+        padding-bottom: 5em; } }
+    /* line 57, ../_src/scss/_layout.scss */
     .fixed-page-wrap .page .content {
       width: 100%;
       float: right;
       position: relative;
       z-index: 5;
-      padding: 1em; }
+      padding: 0 17px; }
       @media (min-width: 650px) {
-        /* line 43, ../_src/scss/_layout.scss */
+        /* line 57, ../_src/scss/_layout.scss */
         .fixed-page-wrap .page .content {
           width: 50%; } }
 
-/* line 57, ../_src/scss/_layout.scss */
+/* line 71, ../_src/scss/_layout.scss */
 footer {
   width: 100%;
   height: auto;
   z-index: 10;
-  padding: 1em;
+  padding: 1em 17px;
   position: relative; }
   @media (min-width: 650px) {
-    /* line 57, ../_src/scss/_layout.scss */
+    /* line 71, ../_src/scss/_layout.scss */
     footer {
+      padding: 1em 34px;
       position: absolute;
       bottom: 0;
-      left: 0;
-      margin-bottom: 2em; } }
+      left: 0; } }
 
 /* line 1, ../_src/scss/_background-images.scss */
 .bg-slides {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 2px solid #000;
+  overflow: hidden; }
   @media (min-width: 650px) {
     /* line 1, ../_src/scss/_background-images.scss */
     .bg-slides {
       position: absolute;
-      height: 100%; } }
-  /* line 12, ../_src/scss/_background-images.scss */
+      height: 100%;
+      box-shadow: inherit;
+      border-bottom: 0px solid #000; } }
+  /* line 15, ../_src/scss/_background-images.scss */
   .bg-slides .slide {
     width: 100%;
     opacity: 0;
@@ -695,12 +713,12 @@ footer {
     position: relative;
     padding-bottom: 62.5%; }
     @media (min-width: 650px) {
-      /* line 12, ../_src/scss/_background-images.scss */
+      /* line 15, ../_src/scss/_background-images.scss */
       .bg-slides .slide {
         position: absolute;
         padding-bottom: 0;
         height: 100%; } }
-    /* line 25, ../_src/scss/_background-images.scss */
+    /* line 28, ../_src/scss/_background-images.scss */
     .bg-slides .slide img {
       top: 0;
       left: 0;
@@ -708,7 +726,7 @@ footer {
       min-width: 0;
       position: absolute; }
       @media (min-width: 650px) {
-        /* line 32, ../_src/scss/_background-images.scss */
+        /* line 35, ../_src/scss/_background-images.scss */
         .bg-slides .slide img.match-height {
           width: auto;
           height: 100%; } }
@@ -716,18 +734,33 @@ footer {
 /* Typography */
 /* line 2, ../_src/scss/_typography.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 17px; }
 
-/* line 6, ../_src/scss/_typography.scss */
+/* line 7, ../_src/scss/_typography.scss */
 h1 {
+  font-size: 27.50658px;
   display: block;
   margin: 0 0; }
 
-/* line 11, ../_src/scss/_typography.scss */
+/* line 13, ../_src/scss/_typography.scss */
+h2 {
+  font-size: 27.50658px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 17px 0; }
+
+/* line 20, ../_src/scss/_typography.scss */
 p {
   font-weight: 200; }
 
-/* line 16, ../_src/scss/_typography.scss */
+/* line 25, ../_src/scss/_typography.scss */
 a {
-  color: #fff;
+  color: inherit;
   text-decoration: underline; }
+
+/* line 30, ../_src/scss/_typography.scss */
+ul {
+  padding-left: 0;
+  list-style: none;
+  list-style-position: outside; }

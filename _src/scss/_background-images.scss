@@ -1,11 +1,14 @@
 .bg-slides {
-    
     position: relative;
     width: 100%;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
   
   @include breakpoint(baby-bear) {
     position: absolute;
     height: 100%;
+    box-shadow: inherit;
+    border-bottom: 0px solid #000;
   }
   
   

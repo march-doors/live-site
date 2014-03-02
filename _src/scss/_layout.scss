@@ -26,6 +26,20 @@ body {
     height: 100%;
   }
 
+  .logo {
+    position: absolute;
+    z-index: 10;
+    width: 320px;
+      padding: ms(0);
+    @include breakpoint(baby-bear) {
+      padding: 2*ms(0);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
   .page {
     z-index: 5;
     display: block;
@@ -36,8 +50,8 @@ body {
     @include breakpoint(baby-bear) {
       position: absolute;
       overflow-y: auto;
-      padding: 2em;
-      padding-bottom: 6em;
+      padding: 2*ms(0);
+      padding-bottom: 5em;
     }
 
     .content {
@@ -48,7 +62,7 @@ body {
       float: right;
       position: relative;
       z-index: 5;
-      padding: 1em;
+      padding: 0 ms(0);
     }
   }
 }
@@ -58,13 +72,14 @@ footer {
   width: 100%;
   height: auto;
   z-index: 10;  
-  padding: 1em;
     
+    padding: 1em ms(0);
     position: relative;
   @include breakpoint(baby-bear) {
+    padding: 1em 2*ms(0);
     position: absolute;
     bottom: 0;
     left: 0;
-    margin-bottom: 2em;
+    // margin-bottom: 2em;
   }
 }
